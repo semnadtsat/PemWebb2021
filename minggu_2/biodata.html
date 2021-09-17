@@ -17,25 +17,51 @@
 
             .img {
                 float: left;
-                margin-left: 330px;
-                margin-top: 3%;
+                height: auto;
+                padding: 4px;
+                background-color: #ffffff;
+                border: 1px solid #dddddd;
+                border-radius: 4px;;
+            }
+
+            .krs {
+                border: 1 solid gray;
+                border-collapse: collapse;
+                font-size: 0.9em;
+                position: relative;
+                left: 21%;
+                margin-top: 30px;
+                margin-bottom: 30px;
+            }
+
+            .krs thead th {
+                background-color: #20485a;
+                color: white;
+                padding: 12px;
+                border: 1px solid #dddddd;
+                text-align: left;
+            }
+
+            .krs td {
+                padding: 12px;
+                border: 1px solid #dddddd;
             }
 
             .table {
-                font-size: 90%;
-                margin-left: 43%;
-                margin-top: 2%;
-                border-collapse: collapse;
+                display: inline-block;
+                margin-left: 30px;
             }
 
-            td{
-                width: 200px;
-                height: 50px
+            .table td {
+                padding: 8px;
+                /* border-top: 1px solid #C2C2C2; */
+                border-bottom: 1px solid #C2C2C2;
             }
 
-            .tmid {
-                text-align: center;
-                width: 30px;
+            .center {
+                position: relative;
+                left: 25%;
+                display: inline-block;
             }
         </style>
     </head>
@@ -43,46 +69,128 @@
     <body style="background-color: #f3f1ec;">
         <h1>Student Details</h1>
 
-        <hr color="#d9534f" style="width: 240px;">
+        <hr color="#d9534f" style="width: 400px; margin-left: 490px;">
+        
+        <div class="center">
+            <div class="img">
+                <img src="http://mahasiswa.dinus.ac.id/images/foto/A/A11/2020/A11.2020.13068.jpg" width="160">
+            </div>
 
-        <div class="img">
-            <img src="http://mahasiswa.dinus.ac.id/images/foto/A/A11/2020/A11.2020.13068.jpg" width="160">
+            <div class="table">
+                <table>
+                    <tr>
+                        <td>Name</td>
+                        <td class="tmid">:</td>
+                        <td>HAFIIDH AKBAR SYA'BANI</td>
+                    </tr>
+                    <tr>
+                        <td>NIM</td>
+                        <td class="tmid">:</td>
+                        <td>A11.2020.13068</td>
+                    </tr>
+                    <tr>
+                        <td>University</td>
+                        <td class="tmid">:</td>
+                        <td>Universitas Dian Nuswantoro</td>
+                    </tr>
+                    <tr>
+                        <td>Programs</td>
+                        <td class="tmid">:</td>
+                        <td>Bachelor of Informatics</td>
+                    </tr>
+                    <tr>
+                        <td>Semester</td>
+                        <td class="tmid">:</td>
+                        <td>3</td>
+                    </tr>
+                    <tr>
+                        <td>Status</td>
+                        <td class="tmid">:</td>
+                        <td>Active</td>
+                    </tr>
+                </table>
+            </div>
         </div>
 
-        <div class="table">
-            <table>
+        <table class="krs" style="border: 15px solid white; display: inline-block; outline: 1px solid #dddddd;">
+            <caption style="background-color: white; text-align: left; padding: 12px; padding-left: 0px; font-size: 18px;">KRS Schedule</caption>
+            <thead>
                 <tr>
-                    <td>Name</td>
-                    <td class="tmid">:</td>
-                    <td>Hafiidh Akbar Sya'bani</td>
+                    <th>No</th>
+                    <th>Courses Code</th>
+                    <th>Group</th>
+                    <th>Courses</th>
+                    <th>SKS</th>
+                    <th>Status</th>
                 </tr>
+            </thead>
+            <tbody>
                 <tr>
-                    <td>NIM</td>
-                    <td class="tmid">:</td>
-                    <td>A11.2020.13068</td>
-                </tr>
-                <tr>
-                    <td>University</td>
-                    <td class="tmid">:</td>
-                    <td>Universitas Dian Nuswantoro</td>
-                </tr>
-                <tr>
-                    <td>Programs</td>
-                    <td class="tmid">:</td>
-                    <td>Bachelor of Informatics</td>
-                </tr>
-                <tr>
-                    <td>Semester</td>
-                    <td class="tmid">:</td>
+                    <td>1</td>
+                    <td>A11.54302</td>
+                    <td>A11.4119</td>
+                    <td>MATEMATIKA DISKRIT</td>
                     <td>3</td>
+                    <td>B</td>
                 </tr>
                 <tr>
-                    <td>Status</td>
-                    <td class="tmid">:</td>
-                    <td>Active</td>
+                    <td>2</td>
+                    <td>A11.54303</td>
+                    <td>A11.4302</td>
+                    <td>MATRIKS & RUANG VEKTOR</td>
+                    <td>3</td>
+                    <td>B</td>
                 </tr>
-            </table>
-        </div>
+                <tr>
+                    <td>3</td>
+                    <td>A11.54306</td>
+                    <td>A11.4316</td>
+                    <td>STRUKTUR DATA</td>
+                    <td>4</td>
+                    <td>B</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>A11.54314</td>
+                    <td>A11.4301</td>
+                    <td>PEMROGRAMAN BERBASIS WEB</td>
+                    <td>2</td>
+                    <td>B</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>A11.54403</td>
+                    <td>A11.4311</td>
+                    <td>ORGANISASI DAN ARSITEKTUR KOMPUTER</td>
+                    <td>3</td>
+                    <td>B</td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td>A11.54501</td>
+                    <td>A11.4317</td>
+                    <td>JARINGAN KOMPUTER</td>
+                    <td>3</td>
+                    <td>B</td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td>A11.54608</td>
+                    <td>A11.4511</td>
+                    <td>PEMROGRAMAN PERANGKAT BERGERAK</td>
+                    <td>3</td>
+                    <td>B</td>
+                </tr>
+                <tr>
+                    <td>8</td>
+                    <td>N201706</td>
+                    <td>n605</td>
+                    <td>PENDIDIKAN KEWARGANEGARAAN</td>
+                    <td>2</td>
+                    <td>B</td>
+                </tr>
+            </tbody>
+        </table>
 
     </body>
 </html>
