@@ -1,0 +1,30 @@
+Memindahkan folder htdocs ke direktori lain
+- Karena penyimpanan direktori C: yang mulai penuh, saya pindah folder htdocs yang berada di C:\Apache24\ ke direktori D:
+
+- Harus ubah beberapa konfigurasi di file httpd.conf
+
+- Buka httpd.conf, cari "DocumentRoot", ganti baris:
+DocumentRoot "${SRVROOT}/htdocs"
+<Directory "${SRVROOT}/htdocs">
+    Options Indexes FollowSymLinks
+    AllowOverride None
+    Require all granted
+</Directory>
+
+menjadi: 
+DocumentRoot "lokasi htdocs baru"
+<Directory "lokasi htdocs baru">
+    Options Indexes FollowSymLinks
+    AllowOverride None
+    Require all granted
+</Directory>
+
+- Simpan perubahan lalu restart apache dengan "httpd.exe -k restart"
+
+Instalasi w3school offline
+- Pastikan Apache web server dalam keadaan mati/stop
+- Download zip w3school offline(2021) melalui http://devel.dinustech.com/aboe/materi/?dir=2021/PEM-WEB/w3schoolOffline
+- Extract lalu ganti nama menjadi "w3school"
+- Pindahkan folder hasil extract ke folder htdocs 
+- Jalankan Apache dan restart bila perlu
+- Akses w3school menggunakan browser dengan address "localhost/w3school"
