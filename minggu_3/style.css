@@ -1,0 +1,8 @@
+#yes {
+    color: green;
+    font-family: 'Roboto Slab', serif; /*Generating online font*/
+    font-size: 60px;
+    background: wheat;
+    display: block;
+    text-align: center;
+}
