@@ -1,0 +1,285 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Form PPDB</title>
+        <style>
+            body {
+                font-family: 'Open Sans', sans-serif;
+            }
+
+            table {
+                border-collapse: collapse;
+                width: 75%;
+            }
+
+            th, td {
+                padding: 4px;
+            }
+
+            .borddat {
+                border-left: 1px solid black;
+                border-top: 1px solid black;
+                border-bottom: 1px solid black;
+                padding-left: 8px;
+            }
+
+            .bordmid {
+                border-top: 1px solid black;
+                border-bottom: 1px solid black;
+            }
+
+            .bordright {
+                border-top: 1px solid black;
+                border-bottom: 1px solid black;
+                border-right: 1px solid black;
+            }
+
+            .enum {
+                border: 1px solid black;
+                width: 53px;
+                text-align: center;
+            }
+
+            .alleft {
+                border: 1px solid black;
+                text-align: left;
+                padding-left: 8px;
+            }
+        </style>
+    </head>
+
+    <body style="background-color: #cdd0ff;">
+        
+        <div style="border: 1px solid black; background-color: e1e3ff; padding: 30px;">
+            <header style="text-align: center; font-size: 25px;">FORM PENERIMAAN PESERTA DIDIK BARU</header>
+        </div>
+
+        <div style="border: 1px solid black; background-color:#e1e3ff; margin: 90px; margin-top: 50px; padding-top: 40px; padding-bottom: 40px;">
+            <table style="margin-left: auto; margin-right: auto; width: 90%;">
+                <tr>
+                    <th class="enum">Nomor</th>
+                    <th class="alleft" style="border-right: 0px;">INFO PENDAFTARAN</th>
+                    <th class="bordmid"></th>
+                    <th class="bordmid"></th>
+                    <th class="bordright"></th>
+                </tr>
+                <tr>
+                    <td class="enum">1</td>
+                    <td class="borddat">NISN</td>
+                    <td class="bordmid">:</td>
+                    <td class="bordmid"><input style="width: 300px;" type="text"></td>
+                    <td class="bordright"></td>
+                </tr>
+                <tr>
+                    <td class="enum">2</td>
+                    <td class="borddat">Asal Sekolah</td>
+                    <td class="bordmid">:</td>
+                    <td class="bordmid"><input style="width: 300px;" type="text"></td>
+                    <td class="bordright"></td>
+                </tr>
+                <tr>
+                    <td class="enum">3</td>
+                    <td class="borddat">Tahun Lulus</td>
+                    <td class="bordmid">:</td>
+                    <td class="bordmid"><input style="width: 300px;" type="text"></td>
+                    <td class="bordright" style="text-align: right; padding-right: 32px; font-style: italic;">(lampirkan foto copy Ijazah)</td>
+                </tr>
+                <tr>
+                    <th colspan="5" class="alleft">DATA CALON PESERTA</th>
+                </tr>
+                <tr>
+                    <td class="enum">4</td>
+                    <td class="borddat">Nama Lengkap</td>
+                    <td class="bordmid">:</td>
+                    <td class="bordmid"><input style="width: 300px;" type="text"></td>
+                    <td class="bordright"></td>
+                </tr>
+                <tr>
+                    <td class="enum">5</td>
+                    <td class="borddat">NIK</td>
+                    <td class="bordmid">:</td>
+                    <td class="bordmid"><input style="width: 300px;" type="text"></td>
+                    <td class="bordright"></td>
+                </tr>
+                <tr>
+                    <td class="enum">6</td>
+                    <td class="borddat">Tempat Tanggal Lahir</td>
+                    <td class="bordmid">:</td>
+                    <td class="bordmid">
+                        <input type="text" style="width: 150px;">
+                        <input type="date">
+                    </td>
+                    <td class="bordright" style="text-align: right;">Umur: <input type="text" style="width: 30px;"> Tahun, <input type="text" style="width: 30px;"> Bulan</td>
+                </tr>
+                <tr>
+                    <td class="enum"></td>
+                    <td colspan="4" class="alleft">Foto Copy Akte Kelahiran Yang Telah Dilegasilir (Dilampirkan)</td>
+                </tr>
+                <tr>
+                    <td class="enum">7</td>
+                    <td class="borddat">Jenis Kelamin</td>
+                    <td class="bordmid">:</td>
+                    <td class="bordmid">
+                        <input type="radio" name="gender" id="male">
+                        <label for="male">Laki-laki</label>
+                        <input type="radio" name="gender" id="female" style="margin-left: 12px;">
+                        <label for="female">Perempuan</label>
+                    </td>
+                    <td class="bordright"></td>
+                </tr>
+                <tr>
+                    <td class="enum">8</td>
+                    <td class="borddat">Alamat</td>
+                    <td class="bordmid">:</td>
+                    <td class="bordmid"><input style="width: 300px;" type="text"></td>
+                    <td class="bordright"></td>
+                </tr>
+                <tr>
+                    <td class="enum">9</td>
+                    <td class="borddat" style="padding-left: 120px;">Desa/Kel.</td>
+                    <td class="bordmid">:</td>
+                    <td class="bordmid"><input style="width: 300px;" type="text"></td>
+                    <td class="bordright"></td>
+                </tr>
+                <tr>
+                    <td class="enum">10</td>
+                    <td class="borddat" style="padding-left: 120px;">Kecamatan</td>
+                    <td class="bordmid">:</td>
+                    <td class="bordmid"><input style="width: 300px;" type="text"></td>
+                    <td class="bordright"></td>
+                </tr>
+                <tr>
+                    <td class="enum">11</td>
+                    <td class="borddat" style="padding-left: 120px;">Kabupaten</td>
+                    <td class="bordmid">:</td>
+                    <td class="bordmid"><input style="width: 300px;" type="text"></td>
+                    <td class="bordright"></td>
+                </tr>
+                <tr>
+                    <td class="enum">12</td>
+                    <td class="borddat" style="padding-left: 120px;">Provinsi</td>
+                    <td class="bordmid">:</td>
+                    <td class="bordmid"><input style="width: 300px;" type="text"></td>
+                    <td class="bordright"></td>
+                </tr>
+                <tr>
+                    <td class="enum">13</td>
+                    <td class="borddat">Email Aktif</td>
+                    <td class="bordmid">:</td>
+                    <td class="bordmid"><input style="width: 300px;" type="text"></td>
+                    <td class="bordright"></td>
+                </tr>
+                <tr>
+                    <th colspan="5" class="alleft">DATA ORANG TUA (Lampirkan KK)</th>
+                </tr>
+                <tr>
+                    <td class="enum">14</td>
+                    <td class="borddat">Nomor Kartu Keluarga</td>
+                    <td class="bordmid">:</td>
+                    <td class="bordmid"><input style="width: 300px;" type="text"></td>
+                    <td class="bordright"></td>
+                </tr>
+                <tr>
+                    <td class="enum">15</td>
+                    <td class="borddat">Nama Ayah Kandung</td>
+                    <td class="bordmid">:</td>
+                    <td class="bordmid"><input style="width: 300px;" type="text"></td>
+                    <td class="bordright"></td>
+                </tr>
+                <tr>
+                    <td class="enum">16</td>
+                    <td class="borddat">Agama</td>
+                    <td class="bordmid">:</td>
+                    <td class="bordmid">
+                        <select name="agama" id="agama">
+                            <option value="islam">Islam</option>
+                            <option value="kristen">Kristen</option>
+                            <option value="hindu">Hindu</option>
+                            <option value="buddha">Buddha</option>
+                            <option value="konghucu">Konghucu</option>
+                        </select>
+                    </td>
+                    <td class="bordright"></td>
+                </tr>
+                <tr>
+                    <td class="enum">17</td>
+                    <td class="borddat">Pekerjaan</td>
+                    <td class="bordmid">:</td>
+                    <td class="bordmid"><input style="width: 300px;" type="text"></td>
+                    <td class="bordright"></td>
+                </tr>
+                <tr>
+                    <td class="enum">18</td>
+                    <td class="borddat">Nama Ibu Kandung</td>
+                    <td class="bordmid">:</td>
+                    <td class="bordmid"><input style="width: 300px;" type="text"></td>
+                    <td class="bordright"></td>
+                </tr>
+                <tr>
+                    <td class="enum">19</td>
+                    <td class="borddat">Agama</td>
+                    <td class="bordmid">:</td>
+                    <td class="bordmid">
+                        <select name="agama" id="agama">
+                            <option value="islam">Islam</option>
+                            <option value="kristen">Kristen</option>
+                            <option value="hindu">Hindu</option>
+                            <option value="buddha">Buddha</option>
+                            <option value="konghucu">Konghucu</option>
+                        </select>
+                    </td>
+                    <td class="bordright"></td>
+                </tr>
+                <tr>
+                    <td class="enum">20</td>
+                    <td class="borddat">Pekerjaan</td>
+                    <td class="bordmid">:</td>
+                    <td class="bordmid"><input style="width: 300px;" type="text"></td>
+                    <td class="bordright"></td>
+                </tr>
+                <tr>
+                    <td class="enum">21</td>
+                    <td class="borddat">Alamat Orang Tua</td>
+                    <td class="bordmid">:</td>
+                    <td class="bordmid"><input style="width: 300px;" type="text"></td>
+                    <td class="bordright"></td>
+                </tr>
+                <tr>
+                    <td class="enum">22</td>
+                    <td class="borddat" style="padding-left: 120px;">Desa/Kel.</td>
+                    <td class="bordmid">:</td>
+                    <td class="bordmid"><input style="width: 300px;" type="text"></td>
+                    <td class="bordright"></td>
+                </tr>
+                <tr>
+                    <td class="enum">23</td>
+                    <td class="borddat" style="padding-left: 120px;">Kecamatan</td>
+                    <td class="bordmid">:</td>
+                    <td class="bordmid"><input style="width: 300px;" type="text"></td>
+                    <td class="bordright"></td>
+                </tr>
+                <tr>
+                    <td class="enum">24</td>
+                    <td class="borddat" style="padding-left: 120px;">Kabupaten</td>
+                    <td class="bordmid">:</td>
+                    <td class="bordmid"><input style="width: 300px;" type="text"></td>
+                    <td class="bordright"></td>
+                </tr>
+                <tr>
+                    <td class="enum">25</td>
+                    <td class="borddat" style="padding-left: 120px;">Provinsi</td>
+                    <td class="bordmid">:</td>
+                    <td class="bordmid"><input style="width: 300px;" type="text"></td>
+                    <td class="bordright"></td>
+                </tr>
+            </table>
+
+            <div style="display: block; margin-top: 32px; margin-left: 73%;">
+                <button onclick="location.reload()" style="margin-right: 12px; display: inline; width: 100px; height: 30px;">Reload</button>
+                <button style="display: inline; width: 100px; height: 30px;">Submit</button>
+            </div>
+
+        </div>
+
+    </body>
+</html>
