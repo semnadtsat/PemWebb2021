@@ -1,0 +1,168 @@
+/* CSS RESET */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-family: 'Sen', sans-serif;
+	vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+a {
+    text-decoration: none;
+}
+/* END OF CSS RESET */
+
+/* IMAGE SLIDER */
+.slider_container{
+    width: 100%;
+    /* position: absolute; */
+    /* transform: translate(-50%,-50%); */
+    /* top: 50%;
+    left: 50%; */
+    overflow: hidden;
+}
+.slider_wrapper{
+    width: 100%;
+    display: flex;
+    animation: slide 16s infinite;
+}
+.slider_wrapper h1{
+    font-size: 72px;
+    position: absolute;
+    color: white;
+    top: 30%;
+    left: 10%;
+    font-family: 'Raleway', sans-serif;
+    text-shadow: 1px 1px 5px black;
+}
+.slider_wrapper h2{
+    font-size: 36px;
+    position: absolute;
+    color: white;
+    top: 56%;
+    left: 10%;
+    font-family: 'Red Hat Display', sans-serif;;
+    text-shadow: 1px 1px 5px black;
+}
+@keyframes slide{
+    0%{
+        transform: translateX(0);
+    }
+    25%{
+        transform: translateX(0);
+    }
+    30%{
+        transform: translateX(-100%);
+    }
+    50%{
+        transform: translateX(-100%);
+    }
+    55%{
+        transform: translateX(-200%);
+    }
+    75%{
+        transform: translateX(-200%);
+    }
+    80%{
+        transform: translateX(-300%);
+    }
+    100%{
+        transform: translateX(-300%);
+    }
+}
+.slider_img{
+    width: 100%;
+}
+/* END OF IMAGE SLIDER */
+
+.container {
+    border: 1px solid;
+}
+
+.container header{
+    width: 99%;
+    position: absolute;
+    z-index: 2;
+}
+
+.container header h1{
+    /* border: 1px solid; */
+    display: inline-block;
+    margin-top: 40px;
+    margin-bottom: 39px;
+    margin-left: 36px;
+}
+
+.container header h1 a {
+    color: white;
+}
+
+.navbar{
+    float: right;
+    margin-right: 26px;
+    margin-top: 35px;
+}
+
+.navbar ul li{
+    display: inline-block;
+    /* border: 1px solid; */
+    font-size: large;
+    margin-right: 10px;
+    padding: 10px;
+}
+
+.navbar ul li:hover {
+    transition: .3s;
+    background-color: rgba(0, 0, 0, 0.13);
+    border-radius: 5px;
+}
+
+.navbar ul li:nth-child(5){
+    background-color: #00A5D1;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.navbar ul li:nth-child(5):hover{
+    transition: .3s;
+    background-color: #0288ad;
+}
+
+.navbar ul li a {
+    color: white;
+}

@@ -1,0 +1,556 @@
+
+/* CSS Reset */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-weight: inherit;
+	font-style: inherit;
+	font-size: 100%;
+	font-family: inherit;
+	vertical-align: baseline;
+}
+/* remember to define focus styles! */
+:focus {
+	outline: 0;
+}
+body {
+	line-height: 1;
+	color: black;
+	background: white;
+}
+ol, ul {
+	list-style: none;
+}
+/* tables still need 'cellspacing="0"' in the markup */
+table {
+	border-collapse: separate;
+	border-spacing: 0;
+}
+caption, th, td {
+	text-align: left;
+	font-weight: normal;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: "";
+}
+blockquote, q {
+	quotes: "" "";
+}
+/* End of CSS Reset */
+
+
+/* Micro Clearfix */
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.cf {
+    *zoom: 1;
+}
+/* End of Mircro clearfix */
+
+
+/* Start */
+html body{
+    position: static;
+    padding-bottom: 0px;
+}
+/* End of Start */
+
+
+/* Header */
+.fixed-header{
+    width: 100%;
+    position: fixed;
+    top: 20px;
+    z-index: 99;
+    display: table;
+    margin: -20px auto;
+    padding-top: 20px;
+    /* border: 2px solid red; */
+}
+
+.sticky{
+    margin-top: -20px auto;
+    transition: .3s;
+    padding-bottom: -90px;
+}
+
+@supports (-webkit-backdrop-filter: none) or (backdrop-filter: none) {
+    .sticky {
+        -webkit-backdrop-filter: blur(8px);
+        backdrop-filter: blur(8px);
+        background-color: rgba(0, 0, 0, 0.37);  
+    }
+}
+
+header{
+    display: table;
+    margin: 0 auto;
+    width: 90%;
+    position: relative;
+    z-index: 1;
+    /* border: 1px solid red; */
+}
+
+header h1{
+    /* border: 1px solid; */
+    /* display: inline-block;
+    margin-top: 40px;
+    margin-bottom: 39px;
+    margin-left: 36px; */
+    font-family: 'Sen', sans-serif;
+    font-weight: 700;
+    font-size: 36px;
+}
+
+.iconflex{
+    display: inline-block;
+    /* border: 1px solid red; */
+}
+
+header .icon{
+    display: flex;
+    margin: auto;
+    /* border: 1px solid red; */
+}
+
+header .icon img{
+    width: 54px;
+    height: 34px;
+    display: inline-block;
+    margin-right: 5px;
+}
+
+.icon h1{
+    display: inline-block;
+}
+
+header h1 a {
+    color: white;
+    text-decoration: none;
+}
+
+header h1 a:hover{
+    color: white;
+}
+
+.navbar{
+    float: right;
+    /* margin-right: 26px; */
+    margin-top: -3px;
+}
+
+.navbar ul li{
+    display: inline-block;
+    /* border: 1px solid; */
+    font-size: medium;
+    margin-right: 10px;
+    padding: 5px 10px;
+}
+
+.navbar ul li:hover {
+    transition: .3s;
+    background-color: rgba(0, 0, 0, 0.13);
+    border-radius: 5px;
+}
+
+.navbar ul li:nth-child(5){
+    background-color: #00A5D1;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.navbar ul li:nth-child(5):hover{
+    transition: .3s;
+    background-color: #0288ad;
+}
+
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+    font-family: 'Sen', sans-serif;
+}
+/* End of Header */
+
+
+/* Slider caption */
+.carousel-inner{
+    position: static;
+}
+
+.carousel-inner .carousel-item{
+    /* position: static; */
+}
+
+.carousel-inner .carousel-item  .carousel-caption{
+    /* border: 1px solid red; */
+    top: 41%;
+}
+
+.carousel-inner .carousel-item  .carousel-caption h1{
+    /* border: 1px solid red; */
+    font-size: 52px;
+    font-family: 'Raleway', sans-serif;
+    text-shadow: 1px 1px 2px black;
+}
+
+.carousel-inner .carousel-item  .carousel-caption p {
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 24px;
+}
+
+.carousel-button{
+    font-family: 'Montserrat', sans-serif;
+    font-size: large;
+    color: white;
+    text-decoration: none;
+    background-color: #00A5D1;
+    padding: 8px 14px;
+    border-radius: 5px;
+}
+
+.carousel-button:hover{
+    color: white;
+    background-color: #00baee;
+}
+/* End of Slider caption */
+
+
+/* I have no idea */
+.bd-placeholder-img {
+    font-size: 1.125rem;
+    text-anchor: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+}
+
+@media (min-width: 768px) {
+    .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+    }
+}
+/* End of I have no idea */
+
+
+/* Carousel */
+.carousel-inner{
+    height: 610px;
+}
+
+.carousel-item{
+    height: 500px;
+}
+
+.containerCarousel{
+    position: absolute;
+    width: 100%;
+    top: 0px;
+}
+
+.containerCarousel .carousel-inner .carousel-item img{
+    height: 610px;
+}
+
+body .containerCarousel .carousel-control-prev{
+    /* border: 1px solid red; */
+    height: 50%;
+    margin-top: 10em;
+    margin-left: 30px;
+    width: 100px;
+}
+
+body .containerCarousel .carousel-control-next{
+    /* border: 1px solid red; */
+    height: 50%;
+    margin-top: 10em;
+    margin-right: 30px;
+    width: 100px;
+}
+/* End of Carousel */
+
+
+/* Image Content */
+.content, .image-content, .row1, .row2, .row3{
+    /* border: 1px solid black; */
+}
+
+.content{
+    margin: 10px 0;
+    margin-top: 580px;
+}
+
+.content .image-content{
+    display: flex;
+    justify-content: space-evenly;
+    align-content: flex-end;
+    height: 2020px;
+}
+
+.image-content .row1 img{
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.image-content .row2 img{
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.image-content .row3 img{
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.image-content .row1, .row2, .row3{
+    width: 390px;
+    display: inline-block;
+    overflow: hidden;
+}
+
+.hover-img{
+    background-color: black;
+    opacity: 1;
+}
+
+.hover-img::after{
+    content: '';
+    margin-bottom: 15px;
+    background-color: white;
+    display: block;
+}
+
+/* .hover-img p::before{
+    content: '';
+    background-image: url(https://www.gstatic.com/subscriptions/img/logo_one_108px_d9958cde481d1e76551438f913cdcf41.svg);
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    opacity: 0;
+    display: inline;
+    border: 1px solid red;
+} */
+
+.hover-img .img-profile{
+    /* border: 1px solid red; */
+    position: absolute;
+    display: inline-block;
+    width: 45px;
+    height: 45px;
+    margin-left: 25px;
+    opacity: 0;
+    border-radius: 50%;
+    z-index: 98;
+}
+
+.hover-img:hover .img-profile{
+    margin-top: 20px;
+    transition: .2s;
+    opacity: 1;
+}
+
+.hover-img p{
+    /* border: 1px solid red; */
+    background-color: rgba(255, 255, 255, 0);
+    color: rgba(255, 255, 255, 0);
+    position: absolute;
+    /* margin-top: -60px; */
+    margin-left: 80px;
+    font-size: 16px;
+    font-family: 'Spartan', sans-serif;
+    font-weight: 400;
+    /* display: none; */
+    z-index: 98;
+}
+
+/* .hover-img:hover p::before{
+    opacity: 1;
+} */
+
+.hover-img:hover p{
+    transition: .2s;
+    color: white;
+    margin-top: 30px;
+    display: block;
+}
+
+.hover-img:hover img{
+    opacity: 0.75;
+    transition: .3s;
+    cursor: pointer;
+}
+/* End of Image Content */
+
+
+/* Bottom Button */
+body .bottom-button{
+    display: table;
+    margin: 40px auto;
+}
+
+body .bottom-button h1 a{
+    text-decoration: none;
+    padding: 12px 40px;
+    background-color: #00A5D1;
+    color: white;
+    font-family: 'Sen', sans-serif;
+    border-radius: 5px;
+}
+
+body .bottom-button h1{
+    display: inline-block;
+    font-size: x-large;
+}
+
+body .bottom-button h1 a:hover{
+    transition: .3s;
+    background-color: #0288ad;
+}
+/* End of Bottom Button */
+
+
+/* Footer */
+footer{
+    width: 100%;
+    height: 450px;
+    background-image: url(footer/nicolas-beltran-lopez-dN75r8D9Qks-unsplash.jpg);
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    position: static;
+    background-position-y: -220px;
+}
+
+.footer-join{
+    /* border: 1px solid red; */
+    margin: auto;
+    padding-top: 40px;
+    width: 30%;
+    position: relative;
+    text-align: center;
+}
+
+.footer-join h1{
+    font-size: 24px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    color: white;
+}
+
+.footer-join p{
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    margin: 12px 0 35px;
+}
+
+.footer-join h1 a{
+    text-decoration: none;
+    font-size: large;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 5px;
+    background-color: #2164AF;
+    font-weight: 400;
+}
+
+.footer-join h1 a:hover{
+    background-color: #2072cf;
+    transition: .3s;
+}
+
+footer .follow{
+    /* border: 1px solid red; */
+    display: inline-block;
+    margin-top: 130px;
+    margin-left: 65px;
+}
+
+footer .follow h2{
+    color: white;
+    font-family: 'Spartan', sans-serif;
+    font-weight: 600;
+    margin: 0;
+    font-size: 24px;
+}
+
+footer .follow h2 a{
+    color: white;
+}
+
+footer .follow h2 a:hover{
+    color: white;
+}
+
+footer .nav-content{
+    /* border: 1px solid red; */
+    float: right;
+    /* display: flex; */
+    /* justify-content: space-around; */
+    width: 390px;
+    margin-right: 50px;
+    margin-top: 70px;
+}
+
+footer .nav-content .nav-bot{
+    /* border: 1px solid red; */
+    display: inline;
+    float: left;
+}
+
+footer .nav-content .content-bot{
+    /* border: 1px solid red; */
+    display: inline;
+    float: right;
+}
+
+footer .nav-content .nav-bot h2{
+    color: white;
+    font-family: 'Spartan', sans-serif;
+    font-weight: 600;
+    font-size: 28px;
+}
+
+footer .nav-content .content-bot h2{
+    color: white;
+    font-family: 'Spartan', sans-serif;
+    font-weight: 600;
+    font-size: 28px;
+}
+
+footer .nav-content .nav-bot a{
+    /* display: block; */
+    font-family: 'Sen', sans-serif;
+    text-decoration: none;
+    color: white;
+}
+
+footer .nav-content .content-bot a{
+    /* display: block; */
+    font-family: 'Sen', sans-serif;
+    text-decoration: none;
+    color: white;
+}
+/* End of Footer */

@@ -1,0 +1,149 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-family: 'Sen', sans-serif;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* END OF CSS RESET */
+
+body{
+    background-image: url('img12.png');
+    background-size: cover;
+}
+
+header {
+    border: 1px solid;
+    height: 122px;
+}
+
+.hbackground{
+    /* background-image: url('img12.png'); */
+    display: block;
+    height: max-content;
+}
+
+header h1{
+    border: 1px solid;
+    font-size: 36px;
+    font-weight: bold;
+    display: block;
+    float: left;
+    margin: 36px;
+    margin-top: 40px;
+    margin-bottom: 39px;
+}
+
+header h1 a{
+    padding: 0px;
+    color: white;
+}
+
+header ul{
+    border: 1px solid;
+    float: right;
+}
+
+.navigation ul li{
+    font-size: 18px;
+    border: 1px solid;
+    margin-left: 5px;
+    margin-right: 5px;
+    display: inline-block;
+    padding: 8px;
+}
+
+.navigation ul li a{
+    color: white;
+}
+
+.navigation ul li:hover{
+    transition: .3s;
+    background-color: rgba(0, 0, 0, 0.254);
+    border-radius: 5px;
+}
+
+.navigation ul li:nth-child(5){
+    background-color: #00A5D1;
+    border-radius: 5px;
+    padding: 8px 24px;
+}
+
+.navigation ul li:nth-child(5):hover{
+    transition: .3s;
+    background-color: #0288ad;
+}
+
+.navigation{
+    border: 1px solid;
+    margin-top: 41px;
+    margin-right: 26px;
+    display: block;
+    float: right;
+}
+
+a{
+    text-decoration: none;
+}
+
+.mobile-menu{
+    float: right;
+    display: none;
+}
+
+.mobile-menu:hover{
+    cursor: pointer;
+}
+
+#check{
+    display: none;
+}
+
+@media(max-width:768px){
+    .mobile-menu{
+        display: block;
+    }
+    .navigation{
+        display: none;
+    }
+}

@@ -1,0 +1,333 @@
+/* CSS Reset */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-weight: inherit;
+	font-style: inherit;
+	font-size: 100%;
+	font-family: inherit;
+	vertical-align: baseline;
+}
+/* remember to define focus styles! */
+:focus {
+	outline: 0;
+}
+body {
+	line-height: 1;
+	color: black;
+	background: white;
+}
+ol, ul {
+	list-style: none;
+}
+/* tables still need 'cellspacing="0"' in the markup */
+table {
+	border-collapse: separate;
+	border-spacing: 0;
+}
+caption, th, td {
+	text-align: left;
+	font-weight: normal;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: "";
+}
+blockquote, q {
+	quotes: "" "";
+}
+/* End of CSS Reset */
+
+
+/* Micro Clearfix */
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.cf {
+    *zoom: 1;
+}
+/* End of Mircro clearfix */
+
+body {
+    background-image: url(background/tobias-keller-HzSLh5zV42s-unsplash.jpg);
+    background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.icon{
+    /* border: 1px solid red; */
+	margin: 20px auto;
+	width: fit-content;
+}
+
+.icon img{
+    display: inline-block;
+    width: 85px;
+}
+
+.icon h1{
+    display: inline-block;
+}
+
+.icon h1 a{
+    text-decoration: none;
+    color: white;
+    font-family: 'Sen', sans-serif;
+    font-weight: 700;
+    font-size: 45px;
+}
+
+.panel{
+	background-color: white;
+	border-radius: 10px;
+	width: 50%;
+	margin: 0 auto 100px;
+	padding: 40px 60px;
+	box-sizing: border-box;
+}
+
+.panel h1{
+	/* border: 1px solid red; */
+	margin: 0 auto;
+	width: fit-content;
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+	font-weight: 600;
+	font-size: 28px;
+}
+
+.panel .method{
+	display: flex;
+	flex-direction: column;
+	row-gap: 10px;
+	/* border: 1px solid red; */
+	margin: 30px auto;
+	width: fit-content;
+}
+
+.panel .method .facebook{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	box-sizing: border-box;
+}
+
+.panel .method .facebook p{
+	display: inline-block;
+}
+
+.panel .method .facebook p a{
+	text-decoration: none;
+	color: white;
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+	font-weight: 400;
+	font-size: 18px;
+	display: inline-block;
+	width: 480px;
+	height: 30px;
+	border-radius: 5px;
+	background-color: #1877F2;
+	padding-top: 10px;
+}
+
+.panel .method .google{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	box-sizing: border-box;
+}
+
+.panel .method .google p{
+	display: inline-block;
+}
+
+.panel .method .google p a{
+	text-decoration: none;
+	color: white;
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+	font-weight: 400;
+	font-size: 18px;
+	border-radius: 5px;
+	background-color: #CE0000;
+	display: inline-block;
+	width: 480px;
+	height: 30px;
+	padding-top: 10px;
+}
+
+body .panel h2{
+	width: fit-content;
+	margin: 0 auto 24px;
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+	font-weight: 400;
+	font-size: large;
+}
+
+body .panel .field-container{
+	display: flex;
+	flex-direction: column;
+	row-gap: 20px;
+	margin: 0 auto 16px;
+	width: fit-content;
+}
+
+.panel .field-container .username, .email, .password, .cfm-password{
+	/* border: 1px solid red; */
+}
+
+.panel .field-container .username p, .email p, .password p, .cfm-password p{
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+	font-weight: 400;
+	margin-bottom: 10px;
+}
+
+.panel .field-container .username input, .email input, .password input, .cfm-password input{
+	width: 480px;
+	height: 30px;
+	font-size: 18px;
+	padding-left: 8px;
+	border-radius: 5px;
+	border: 1px solid black;
+}
+
+.panel .field-container .password i{
+	position: absolute;
+	font-size: 20px;
+	margin: 7px 0 0 -32px;
+}
+
+.eyedchange{
+	color: blue;
+}
+
+.panel .field-container .cfm-password i{
+	position: absolute;
+	font-size: 20px;
+	margin: 7px 0 0 -32px;
+}
+
+.panel .checkbox{
+	/* border: 1px solid red; */
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	column-gap: 8px;
+	margin-bottom: 40px;
+}
+
+.panel .checkbox .checkbox-tick{
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+}
+
+.panel .checkbox p{
+	display: inline-block;
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+	font-weight: 500;
+}
+
+.panel .checkbox p a{
+	color: royalblue;
+}
+
+.panel .crt-button{
+	margin: 0 auto;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.panel .crt-button p{
+	display: inline-block;
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+	font-size: large;
+}
+
+.panel .crt-button p a{
+	text-decoration: none;
+	color: white;
+	background-color: #00A5D1;
+	padding: 7px 20px;
+	border-radius: 5px;
+}
+
+.panel .acc-login{
+	width: fit-content;
+	margin: 20px auto 0;
+}
+
+.panel .acc-login p{
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.panel .acc-login a{
+	color: royalblue;
+}
+
+.panel .forgot-password{
+	column-gap: 8px;
+	margin-bottom: 40px;
+}
+
+.panel .forgot-password a{
+	color: royalblue;
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+	font-weight: 400;
+	float: right;
+}
+
+.panel .login-btn{
+	margin: 0 auto;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.panel .login-btn p{
+	display: inline-block;
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+	font-size: large;
+}
+
+.panel .login-btn p a{
+	text-decoration: none;
+	color: white;
+	background-color: #00A5D1;
+	padding: 7px 20px;
+	border-radius: 5px;
+}
+
+.panel .acc-create{
+	width: fit-content;
+	margin: 20px auto 0;
+}
+
+.panel .acc-create p{
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.panel .acc-create a{
+	color: royalblue;
+}

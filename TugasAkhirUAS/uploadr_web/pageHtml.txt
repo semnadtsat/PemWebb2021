@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="">
+        <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+        <meta name="generator" content="Hugo 0.84.0">
+        <title>Welcome to Upload.R</title>
+        <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/carousel/">
+
+        <link rel="stylesheet" href="style3.css">
+        <link rel="shortcut icon" href="favicon2.png" type="image/x-icon">
+        <!-- Bootstrap core CSS -->
+        <link href="https://getbootstrap.com/docs/5.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <!-- Custom styles for this template -->
+        <link href="https://getbootstrap.com/docs/5.0/examples/carousel/carousel.css" rel="stylesheet">
+        <script src="https://getbootstrap.com/docs/5.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+
+        <!-- Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Sen:wght@400;700&display=swap" rel="stylesheet">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap" rel="stylesheet">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@300&display=swap" rel="stylesheet">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@400;600;700&display=swap" rel="stylesheet">
+        <!-- End of Fonts -->
+    </head>
+    
+    <body>
+        <!-- Header -->
+        <div class="fixed-header">
+        <header>
+            <div class="iconflex">
+                <div class="icon">
+                    <a href=""><img src="icon_w.png" alt=""></a>
+                    <h1><a href="">UPLOAD.R</a></h1>
+                </div>
+            </div>
+            <div class="navbar">
+                <ul>
+                    <li><a href="">Explore</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Contact</a></li>
+                    <li><a href="">Login</a></li>
+                    <li><a href="">Upload photo</a></li>
+                </ul>
+            </div>
+        </header>
+        </div>
+        <script>
+            window.addEventListener("scroll",function(){
+                var fixed = document.querySelector("div.fixed-header");
+                fixed.classList.toggle("sticky", window.scrollY > 500);
+            })
+        </script>
+        <!-- End of Header -->
+
+
+        <!-- Carousel -->
+        <div class="containerCarousel" style="height: 10px;">
+            <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active"  aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+
+            <!-- Carousel image -->
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="img1.jpg" alt="">
+                    <div class="container">
+                        <div class="carousel-caption text-start">
+                            <h1>Find high quality<br>free photos</h1>
+                            <p>Submited by photographers around the world</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="img5.jpg" alt="">
+                    <div class="container">
+                        <div class="carousel-caption">
+                            <h1>Start your journey</h1>
+                            <p>Capture anything and see the world from different angle</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="img6.jpg" alt="">
+                    <div class="container">
+                        <div class="carousel-caption text-end">
+                            <h1>Join Upload.R now</h1>
+                            <p>Create an account and start explore the world</p>
+                            <p><a class="carousel-button" href="">Create account</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End of Carousel image -->
+            
+            <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        </div>
+        <!-- End of Carousel -->
+        
+
+        <!-- Image Gallery -->
+        <div class="content">
+            <div class="image-content">
+                <div class="row1">
+                    <div class="hover-img">
+                        <div class="profile-info">
+                            <img src="https://images.unsplash.com/profile-1633525138893-e38cb3b17377?dpr=2&auto=format&fit=crop&w=150&h=150&q=60&crop=faces&bg=fff" alt="" class="img-profile">
+                            <p>Mike Von</p>
+                        </div>
+                        <img src="content/mike-von-afRv4BQIQbY-unsplash.jpg" alt="">
+                    </div>
+                    <div class="hover-img">
+                        <div class="profile-info">
+                            <img src="https://cdn.pixabay.com/user/2021/10/02/09-17-46-967_250x250.jpg" alt="" class="img-profile">
+                            <p>宅-KEN</p>
+                        </div>
+                        <img src="content/subway-g08812598e_1920.jpg" alt="">
+                    </div>
+                    <div class="hover-img">
+                        <div class="profile-info">
+                            <img src="https://images.unsplash.com/placeholder-avatars/extra-large.jpg?dpr=2&auto=format&fit=crop&w=150&h=150&q=60&crop=faces&bg=fff" alt="" class="img-profile">
+                            <p>Taylor Van Riper</p>
+                        </div>
+                        <img src="content/taylor-van-riper-yQorCngxzwI-unsplash.jpg" alt="">
+                    </div>
+                    <div class="hover-img">
+                        <div class="profile-info">
+                            <img src="https://images.unsplash.com/profile-1545127047661-5c96c38d5381?dpr=2&auto=format&fit=crop&w=150&h=150&q=60&crop=faces&bg=fff" alt="" class="img-profile">
+                            <p>Ahmed Nishaath</p>
+                        </div>
+                        <img src="content/ahmed-nishaath-3dK05zuot8c-unsplash.jpg" alt="">
+                    </div>
+                </div>
+                <div class="row2">
+                    <div class="hover-img">
+                        <div class="profile-info">
+                            <img src="https://images.unsplash.com/profile-1637562334886-c4a951bff909image?dpr=2&auto=format&fit=crop&w=150&h=150&q=60&crop=faces&bg=fff" alt="" class="img-profile">
+                            <p>Erik Karits</p>
+                        </div>
+                        <img src="content/erik-karits-w1L9NeWw3oc-unsplash.jpg" alt="">
+                    </div>
+                    <div class="hover-img">
+                        <div class="profile-info">
+                            <img src="https://images.unsplash.com/profile-1634126222888-ee1685763151image?dpr=2&auto=format&fit=crop&w=150&h=150&q=60&crop=faces&bg=fff" alt="" class="img-profile">
+                            <p>Gene Brutty</p>
+                        </div>
+                        <img src="content/gene-brutty-dgxY172QpKs-unsplash.jpg" alt="">
+                    </div>
+                    <div class="hover-img">
+                        <div class="profile-info">
+                            <img src="https://cdn.pixabay.com/user/2021/10/07/15-47-34-417_250x250.jpg" alt="" class="img-profile">
+                            <p>DashaKudryavtseva</p>
+                        </div>
+                        <img src="content/fog-g8872acd83_1920.jpg" alt="">
+                    </div>
+                    <div class="hover-img">
+                        <div class="profile-info">
+                            <img src="https://images.unsplash.com/profile-1617627380817-7d57f5eec051image?dpr=2&auto=format&fit=crop&w=150&h=150&q=60&crop=faces&bg=fff" alt="" class="img-profile">
+                            <p>Isaac Burke</p>
+                        </div>
+                        <img src="content/isaac-burke-3XH3sRsVWbk-unsplash.jpg" alt="">
+                    </div>
+                    <div class="hover-img">
+                        <div class="profile-info">
+                            <img src="https://images.unsplash.com/profile-1550709276110-131b40f03f83?dpr=2&auto=format&fit=crop&w=150&h=150&q=60&crop=faces&bg=fff" alt="" class="img-profile">
+                            <p>Mak</p>
+                        </div>
+                        <img src="content/mak-LK64HNYV6uo-unsplash.jpg" alt="">
+                    </div>   
+                </div>
+                <div class="row3">
+                    <div class="hover-img">
+                        <div class="profile-info">
+                            <img src="https://images.unsplash.com/profile-1548033284415-0df33790b9f7?dpr=2&auto=format&fit=crop&w=150&h=150&q=60&crop=faces&bg=fff" alt="" class="img-profile">
+                            <p>Gatis Marcinkevics</p>
+                        </div>
+                        <img src="content/gatis-marcinkevics-a5uptAdUmjE-unsplash.jpg" alt="">
+                    </div>
+                    <div class="hover-img">
+                        <div class="profile-info">
+                            <img src="https://cdn.pixabay.com/user/2021/01/30/09-40-16-977_250x250.jpg" alt="" class="img-profile">
+                            <p>comuirgheasa</p>
+                        </div>
+                        <img src="content/seagulls-g22072c8c5_1920.jpg" alt="">
+                    </div>
+                    <div class="hover-img">
+                        <div class="profile-info">
+                            <img src="https://images.unsplash.com/profile-1578001036312-77d79ad73ccdimage?dpr=2&auto=format&fit=crop&w=150&h=150&q=60&crop=faces&bg=fff" alt="" class="img-profile">
+                            <p>Error 420 📷</p>
+                        </div>
+                        <img src="content/error-420-KlifoIoFOgQ-unsplash.jpg" alt="">
+                    </div>
+                    <div class="hover-img">
+                        <div class="profile-info">
+                            <img src="https://images.unsplash.com/profile-1614169226936-ae6b94152a0fimage?dpr=2&auto=format&fit=crop&w=150&h=150&q=60&crop=faces&bg=fff" alt="" class="img-profile">
+                            <p>Daniel Eliashevskyi</p>
+                        </div>
+                        <img src="content/daniel-eliashevskyi-rLu07Ytl20Q-unsplash.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End of Image Gallery -->
+
+
+        <!-- Bottom Button -->
+        <div class="bottom-button">
+            <h1><a href="">Explore more</a></h1>
+        </div>
+        <!-- End of Bottom Button -->
+
+
+        <!-- Footer -->
+        <footer>
+            <div class="footer-join">
+                <h1>Join Upload.R now</h1>
+                <p>Sign up and join with other pothographers<br>around the world</p>
+                <h1><a href="">Create account</a></h1>
+            </div>
+
+            <div class="follow">
+                <h2>Follow us &nbsp;
+                    <a href=""><i class="bi bi-instagram"></i></a> &nbsp;
+                    <a href=""><i class="bi bi-twitter"></i></a> &nbsp;
+                    <a href=""><i class="bi bi-facebook"></i></a> &nbsp;
+                    <a href=""><i class="bi bi-youtube"></i></a>
+                </h2>
+            </div>
+
+            <div class="nav-content cf">
+                <div class="nav-bot cf">
+                    <h2>Navigation</h2>
+                    <a href="">Home</a> <br>
+                    <a href="">About</a> <br>
+                    <a href="">Photo</a> <br>
+                    <a href="">Business</a>
+                </div>
+                <div class="content-bot cf">
+                    <h2>Content</h2>
+                    <a href="">Getting started</a> <br>
+                    <a href="">Course</a> <br>
+                    <a href="">Resource</a> <br>
+                    <a href="">How to</a>
+                </div>
+            </div>
+
+        </footer>
+        <!-- End of Footer -->
+
+    </body>
+</html>
